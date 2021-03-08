@@ -66,8 +66,8 @@ DYLIBFILE = libmidifile.dylib
 COMPILER  = LANG=C $(ENV) g++ $(ARCH)
 AR        = ar
 RANLIB    = ranlib
-DEFINES   =
-PREFLAGS  = -c -g -Wall -O3 $(DEFINES) -I$(INCDIR)
+DEFINES   = 
+PREFLAGS  = -c -g -Wall -O3 -fPIC $(DEFINES) -I$(INCDIR)
 
 # Using C++ 2011 standard:
 PREFLAGS += -std=c++11
